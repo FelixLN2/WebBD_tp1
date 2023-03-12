@@ -1,0 +1,14 @@
+.cours-list {
+    list-style: none;
+    margin: 2rem;
+    padding: 0;
+    
+    
+  }
+  
+  .cours-list li {
+    margin: 1rem 0;
+  
+    padding: 1rem;
+  }
+  
