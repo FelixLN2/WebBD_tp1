@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 //import '../../styles/FormulaireCours.css';
 
 
-const FormulaireEtudiants = (props) => {
+function FormulaireEtudiants ({adresseMethode}) {
     const [saisieNum, setSaisieNum] = useState('');
     const [saisieNom, setSaisieNom] = useState('');
     const [saisiePrenom, setSaisiePrenom] = useState('');
@@ -20,23 +20,36 @@ const FormulaireEtudiants = (props) => {
   
    
   
-    const ajouterEtudiantHandler = (event) => {
+    function ajouterEtudiantHandler(event) {
       event.preventDefault();
   
-      const donneesCours = {
+      const donneesEtudiant = {
         Num: saisieNum,
         Nom: saisieNom,
         Prenom: saisiePrenom,
       
       };
-  
+      if(saisieNum===""){
+        alert("Veuillez entrer un Numero d'Admission")
+        return;
+    }
+    if(saisieNom===""){
+      alert("Veuillez entrer un Nom")
+      return;
+  }
+  if(saisiePrenom===""){
+    alert("Veuillez entrer un Prenom")
+    return;
+}
       
+
+  adresseMethode(donneesEtudiant);
       setSaisieNom('');
       setSaisiePrenom('');
       setSaisieNum('');
   
       
-    };
+};
 
 
 
@@ -72,7 +85,6 @@ const FormulaireEtudiants = (props) => {
           
         </div>
         <div className='nouvel_etudiant__actions'>
-          <button type="button" onClick={props.onCancel}>Annuler</button>
           <button type='submit'>Appliquer</button>
         </div>
         
@@ -81,5 +93,6 @@ const FormulaireEtudiants = (props) => {
 
 );
 };
-
-export default FormulaireCours;
+//<button type="button" onClick={props.onCancel}>Annuler</button>
+          
+export default FormulaireEtudiants;

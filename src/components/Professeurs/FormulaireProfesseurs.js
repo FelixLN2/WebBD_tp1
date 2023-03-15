@@ -6,17 +6,18 @@ import Card from "../Card";
 function FormulaireProfesseurs({adresseMethode}){
     const [saisiePrenom, setSaisiePrenom] = useState('')
     const [saisieNom, setSaisieNom] = useState('')
-    const [saisieDate, setSaisieDate] = useState('')
+    //const [saisieDate, setSaisieDate] = useState('')
 
     function ajouterProfesseurHandler(event){
         event.preventDefault();
+        var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
         const donneesProf = {
             id:saisieNom+saisiePrenom,
             nom: saisieNom,
             prenom: saisiePrenom,
             cours:[],
             photoUrl:"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-            dateEmbauche: saisieDate,
+            dateEmbauche: utc,
  
           };
             if(saisiePrenom===""){
@@ -27,24 +28,24 @@ function FormulaireProfesseurs({adresseMethode}){
                 alert("Veuillez entrer un nom")
                 return;
             }
-            if(saisieDate===""){
+           /* if(saisieDate===""){
                 alert("Veuillez entrer une date")
                 return;
-            }
+            }*/
           adresseMethode(donneesProf);
           setSaisiePrenom('');
           setSaisieNom('');
-          setSaisieDate('');
+          //setSaisieDate('');
         
     }
     function saisiePrenomHandler(event){
         
         setSaisiePrenom(event.target.value)
       }
-      function saisieDateHandler(event){
+     /* function saisieDateHandler(event){
         
         setSaisieDate(event.target.value)
-      }
+      }*/
 
     function saisieNomHandler(event){
         setSaisieNom(event.target.value)
@@ -113,7 +114,15 @@ const FormulaireProfesseurs = (props) => {
               onChange={saisieNomHandler}
             />
           </div>
-          <div className='nouveau_prof__control'>
+          
+        </div>
+        <div className='nouveau_prof__actions'>
+          <button type='submit'>Appliquer</button>
+        </div>
+        
+      </form>
+    </div>
+   /* <div className='nouveau_prof__control'>
             <label>Date</label>
             <input
               type='date'
@@ -122,17 +131,13 @@ const FormulaireProfesseurs = (props) => {
               value={saisieDate}
               onChange={saisieDateHandler}
             />
-          </div>
-        </div>
-        <div className='nouveau_prof__actions'>
-          <button type='submit'>Appliquer</button>
-        </div>
-        
-      </form>
-    </div>
+          </div>*/
 
   //<button type="button" onClick={adresseMethode.onCancel}>Annuler</button>
           
+
+
+
    /* <div classnom="teacher-list">
       {teachers.map((teacher) => (
         <div classnom="teacher-card" key={teacher.id}>

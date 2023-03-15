@@ -1,0 +1,4 @@
+Afficher images 
+Faire pour ne pas avoir a rafraichir les pages
+pages personnalisées des cours
+afficher le nom et prenom du prof dans la liste des cours

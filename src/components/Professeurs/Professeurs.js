@@ -12,7 +12,7 @@ function Professeurs() {
       nom: 'Doe',
       prenom: 'John',
       photoUrl: "../../assets/teacher1.jpg",
-      cours: ['English 101', 'Creative Writing', 'Journalism'],
+      cours: 'English',
       dateEmbauche: '11/03/2023',
     },
     {
@@ -20,7 +20,7 @@ function Professeurs() {
       nom: 'Smith',
       prenom: 'Jane',
       photoUrl: "../../assets/teacher2.jpg",
-      cours: ['Math 101', 'Geometry', 'Statistics'],
+      cours: 'Math',
       dateEmbauche: '11/03/2023',
     },
     {
@@ -28,7 +28,7 @@ function Professeurs() {
       nom: 'Johnson',
       prenom: 'Bob',
       photoUrl: "../../assets/teacher3.jpg",
-      cours: ['History 101', 'World War II', 'American Civil War'],
+      cours: 'Physique',
       dateEmbauche: '11/03/2023',
     },
   ]);
