@@ -3,24 +3,25 @@ import Card from '../Card.js'
 
 
 
-function Professeur({id, nom, prenom, cours, dateEmbauche, photoUrl}){
+function Professeur({ id, nom, prenom, cours, dateEmbauche, photo }) {
 
-    
-    
 
-    return(
-      
-        <li key={id}>
-          <Card
-          prenom={prenom}
-          nom={nom}
-          cours={cours}
-          dateEmbauche={dateEmbauche}
-          photoUrl={photoUrl} />
 
-        
-      </li>
-    )
+
+  return (
+
+    <li key={id}>
+      <Card
+        id={id}
+        prenom={prenom}
+        nom={nom}
+        cours={cours}
+        dateEmbauche={dateEmbauche}
+        photo={photo} />
+
+
+    </li>
+  )
 }
 
 export default Professeur;

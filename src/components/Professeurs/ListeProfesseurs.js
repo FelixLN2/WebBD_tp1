@@ -14,11 +14,11 @@ function ListeProfesseurs({ Professeurs }) {
           nom={professeur.nom}
           dateEmbauche={professeur.dateEmbauche}
           cours={professeur.cours}
-          photoUrl={professeur.photoUrl}
+          photo={professeur.photo}
         />
-        
+
       ))}
-      
+
     </ul>
   );
 }

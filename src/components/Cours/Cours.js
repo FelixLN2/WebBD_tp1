@@ -6,7 +6,7 @@ import Professeurs from '../Professeurs/Professeurs';
 
 
 function Cours() {
-    /*const Cours = (props) => {*/
+
     const [enEdition, setEnEdition] = useState('');
     const [cours, setCours] = useState([
         {
@@ -45,16 +45,7 @@ function Cours() {
         console.log(cours);
     }
 
-    /* const enregistrerCoursHandler = (CoursSaisie) => {
-         const donneesCours = {
-         ...CoursSaisie,
-         id: Math.random().toString(),
-         };
-         props.onAddCours(donneesCours);
-         
-         setEnEdition(false);
-         return [donneesCours];
-     };*/
+
 
     const debutEditionHandler = () => {
         setEnEdition(true);
@@ -76,8 +67,7 @@ function Cours() {
             )}
             {enEdition && (
                 <FormulaireCours
-                    //onSaveCoursData={enregistrerCoursHandler}
-                    //onCancel={arretEditionHandler}
+
                     adresseMethode={ajouterCours}
                 />
             )}

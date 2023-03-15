@@ -20,7 +20,7 @@ function Math() {
         }
     ]);
 
-   
+
 
     return (
         <div className='nouveau-cours'>

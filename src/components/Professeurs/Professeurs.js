@@ -4,6 +4,7 @@ import FormulaireProfesseurs from './FormulaireProfesseurs.js'
 import Professeur from "./Professeur";
 import ListeProfesseurs from './ListeProfesseurs';
 
+
 function Professeurs() {
   const [enEdition, setEnEdition] = useState('');
   const [profs, setProfesseurs] = useState([
@@ -11,7 +12,7 @@ function Professeurs() {
       id: 'JohnDoe',
       nom: 'Doe',
       prenom: 'John',
-      photoUrl: "../../assets/teacher1.jpg",
+      photo: "../../assets/teacher1.jpg",
       cours: 'English',
       dateEmbauche: '11/03/2023',
     },
@@ -19,15 +20,15 @@ function Professeurs() {
       id: 'JaneSmith',
       nom: 'Smith',
       prenom: 'Jane',
-      photoUrl: "../../assets/teacher2.jpg",
+      photo: "../../assets/teacher2.jpg",
       cours: 'Math',
       dateEmbauche: '11/03/2023',
     },
     {
-      id: 'JohnsonBob',
+      id: 'BobJohnson',
       nom: 'Johnson',
       prenom: 'Bob',
-      photoUrl: "../../assets/teacher3.jpg",
+      photo: "../../assets/teacher3.jpg",
       cours: 'Physique',
       dateEmbauche: '11/03/2023',
     },

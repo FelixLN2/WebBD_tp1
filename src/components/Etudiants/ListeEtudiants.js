@@ -8,15 +8,15 @@ function ListeEtudiant({ Etudiants }) {
   return (
     <ul >
       {Etudiants.map((etudiant) => (
-    <Etudiant                       
+        <Etudiant
           key={etudiant.Num}
           Num={etudiant.Num}
           Nom={etudiant.Nom}
           Prenom={etudiant.Prenom}
-  
+
         />
       ))}
-       
+
     </ul>
   );
 }

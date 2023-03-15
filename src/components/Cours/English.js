@@ -19,7 +19,7 @@ function English() {
             professeur: 'A',
             etudiants: 10
         },
-        
+
     ]);
 
 

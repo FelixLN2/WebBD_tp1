@@ -19,7 +19,7 @@ function ListeCours({ Cours }) {
           etudiants={cours.etudiants}
         />
       ))}
-       
+
     </ul>
   );
 }

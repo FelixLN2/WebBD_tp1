@@ -8,20 +8,19 @@ import Etudiants from '../Etudiants/Etudiants';
 
 function Physique() {
 
-    const [cours, setCours] = useState([
-        {
-            id: '10113-snPhysique',
-            titre: '10113-sn',
-            discipline: 'Physique',
-            maxEtudiants: 30,
-            dateDebut: '11/03/2023',
-            dateFin: '11/03/2023',
-            professeur: 'A',
-            etudiants: 10
-        },
-    ]);
+    const cours =
+    {
+        id: '10113-snPhysique',
+        titre: '10113-sn',
+        discipline: 'Physique',
+        maxEtudiants: 30,
+        dateDebut: '11/03/2023',
+        dateFin: '11/03/2023',
+        professeur: 'A',
+        etudiants: 10
+    };
 
-    
+
 
 
 

@@ -8,42 +8,42 @@ import '../styles/Navbar.css'
 import logo from '../assets/logo.png';
 
 function Navbar() {
-    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-    const handleDrawerToggle = () => {
-      setIsDrawerOpen(!isDrawerOpen);
-    };
- 
+  const handleDrawerToggle = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
   return (
     <div>
-        
-        
-        
+
+
+
       <div>
-        
-        
-          <nav>
-          
-            <ul>
-           
-              <li>
-              <img src={logo}  className="App-logo" alt="logo" />
-                <Link to="/Accueil">Accueil</Link>
-              </li>
-              <li>
-                <Link to="/Cours">Cours</Link>
-              </li>
-              <li>
-                <Link to="/Professeurs">Professeurs</Link>
-              </li>
-            </ul>
-          </nav>
-     </div>
-     
-</div>
+
+
+        <nav>
+
+          <ul>
+
+            <li>
+              <img src={logo} className="App-logo" alt="logo" />
+              <Link to={"./Accueil"}>Accueil</Link>
+            </li>
+            <li>
+              <Link to="./Cours">Cours</Link>
+            </li>
+            <li>
+              <Link to="./Professeurs">Professeurs</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
   );
 
-   
+
 }
 
 export default Navbar;

@@ -10,25 +10,25 @@ function Etudiants() {
     const [enEdition, setEnEdition] = useState('');
     const [etudiants, setEtudiants] = useState([
         {
-            
+
             Num: '123456',
             Nom: 'Ouelle',
             Prenom: 'Jean',
-           
+
         },
         {
-            
+
             Num: '456789',
             Nom: 'Tupou',
             Prenom: 'Bernard',
-            
+
         },
         {
-            
+
             Num: '987654',
             Nom: 'Rouin',
             Prenom: 'Juliette',
-            
+
         },
     ]);
     function ajouterEtudiants(newEtudiants) {
@@ -63,7 +63,7 @@ function Etudiants() {
         <div className='nouveau-etudiants'>
 
             {!enEdition && (
-                <button onClick={debutEditionHandler}>Ajouter nouveau Etudiants</button>
+                <button onClick={debutEditionHandler}>Ajouter nouvel Etudiant</button>
             )}
             {enEdition && (
                 <FormulaireEtudiants
