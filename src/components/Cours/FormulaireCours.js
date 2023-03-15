@@ -2,6 +2,72 @@ import React, { useState } from 'react';
 import '../../styles/FormulaireCours.css';
 
 
+
+function FormulaireCours({adresseMethode}){
+  const [saisieTitre, setSaisieTitre] = useState('')
+  const [saisieDiscipline, setSaisieDiscipline] = useState('')
+  const [saisieDateDebut, setSaisieDateDebut] = useState('')
+  const [saisieDateFin, setSaisieDateFin] = useState('')
+  const [saisieEtudiants, setSaisieEtudiants] = useState('')
+
+  function ajouterCoursHandler(event){
+      event.preventDefault();
+      const donneesCours = {
+          id:saisieTitre+saisieDiscipline,
+          titre: saisieTitre,
+          discipline: saisieDiscipline,
+
+          maxEtudiants:saisieEtudiants,
+          dateDebut:saisieDateDebut,
+          dateFin: saisieDateFin,
+
+        };
+          if(saisieTitre===""){
+              alert("Veuillez entrer un Titre")
+              return;
+          }
+          if(saisieDiscipline===""){
+              alert("Veuillez entrer un Discipline")
+              return;
+          }
+          if(saisieDateDebut===""){
+              alert("Veuillez entrer une date de début")
+              return;
+          }
+          if(saisieDateFin===""){
+            alert("Veuillez entrer une date de fin")
+            return;
+        }
+        adresseMethode(donneesCours);
+        setSaisieTitre('');
+        setSaisieDiscipline('');
+        setSaisieDateDebut('');
+        setSaisieDateFin('');
+        setSaisieEtudiants('');
+  }
+    function saisieTitreHandler(event){
+      
+      setSaisieTitre(event.target.value)
+    }
+    function saisieDateFinHandler(event){
+      
+      setSaisieDateFin(event.target.value)
+    }
+
+    function saisieDateDebutHandler(event){
+      
+      setSaisieDateDebut(event.target.value)
+    }
+    function saisieEtudiantsHandler(event){
+      
+      setSaisieEtudiants(event.target.value)
+    }
+
+  function saisieDisciplineHandler(event){
+      setSaisieDiscipline(event.target.value)
+    }
+
+/*
 const FormulaireCours = (props) => {
     const [saisieTitre, setSaisieTitre] = useState('');
     const [saisieEtudiants, setSaisieEtudiants] = useState('');
@@ -46,7 +112,7 @@ const FormulaireCours = (props) => {
       setSaisieDateFin('');
       
     };
-
+*/
 
 
   return (
@@ -102,13 +168,13 @@ const FormulaireCours = (props) => {
           </div>
         </div>
         <div className='nouveau_cours__actions'>
-          <button type="button" onClick={props.onCancel}>Annuler</button>
+          
           <button type='submit'>Appliquer</button>
         </div>
         
       </form>
     </div>
-
+//<button type="button" onClick={props.onCancel}>Annuler</button>
 );
 };
 

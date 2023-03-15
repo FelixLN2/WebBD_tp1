@@ -4,36 +4,36 @@ import FormulaireProfesseurs from './FormulaireProfesseurs.js'
 import Professeur from "./Professeur";
 import ListeProfesseurs from './ListeProfesseurs';
 
-function Professeurs(){
+function Professeurs() {
   const [enEdition, setEnEdition] = useState('');
-  const [profs, setProfesseurs]= useState([
+  const [profs, setProfesseurs] = useState([
     {
-      id: 1,
+      id: 'JohnDoe',
       nom: 'Doe',
       prenom: 'John',
-      photoUrl: "https://assets.everspringpartners.com/dims4/default/dbab572/2147483647/strip/true/crop/500x281+0+0/resize/1200x675!/quality/90/?url=http%3A%2F%2Feverspring-brightspot.s3.amazonaws.com%2F02%2Fd1%2F5a5420a64bbd88bff3364544f3a0%2F5-reasons-why-becoming-a-teacher-might-be-right-for-you.jpg",
+      photoUrl: "../../assets/teacher1.jpg",
       cours: ['English 101', 'Creative Writing', 'Journalism'],
-      dateEmbauche:'11/03/2023',
+      dateEmbauche: '11/03/2023',
     },
     {
-      id: 2,
+      id: 'JaneSmith',
       nom: 'Smith',
       prenom: 'Jane',
-      photoUrl: "../../assets/teacher2.png",
+      photoUrl: "../../assets/teacher2.jpg",
       cours: ['Math 101', 'Geometry', 'Statistics'],
-      dateEmbauche:'11/03/2023',
+      dateEmbauche: '11/03/2023',
     },
     {
-      id: 3,
+      id: 'JohnsonBob',
       nom: 'Johnson',
       prenom: 'Bob',
-      photoUrl: "a.jpg",
+      photoUrl: "../../assets/teacher3.jpg",
       cours: ['History 101', 'World War II', 'American Civil War'],
-      dateEmbauche:'11/03/2023',
+      dateEmbauche: '11/03/2023',
     },
   ]);
 
-  function ajouterProf(nouveauProf){
+  function ajouterProf(nouveauProf) {
     setProfesseurs(profs.concat(nouveauProf));
     console.log(profs);
   }
@@ -46,7 +46,7 @@ function Professeurs(){
     setEnEdition(false);
   };
 
-  return(
+  return (
     <div >
       {!enEdition && (
         <button onClick={debutEditionHandler}>Ajouter nouveau Prof</button>
@@ -60,9 +60,9 @@ function Professeurs(){
       )}
       <h2>Professeurs</h2>
       <div id="liste">
-      
-      <ListeProfesseurs Professeurs={profs}/>
-</div>
+
+        <ListeProfesseurs Professeurs={profs} />
+      </div>
     </div>
   );
 }

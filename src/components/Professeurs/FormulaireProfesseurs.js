@@ -3,7 +3,6 @@ import '../../styles/FormulaireProfesseurs.css';
 import Card from "../Card";
 
 
-
 function FormulaireProfesseurs({adresseMethode}){
     const [saisiePrenom, setSaisiePrenom] = useState('')
     const [saisieNom, setSaisieNom] = useState('')
@@ -12,7 +11,7 @@ function FormulaireProfesseurs({adresseMethode}){
     function ajouterProfesseurHandler(event){
         event.preventDefault();
         const donneesProf = {
-            id:4,
+            id:saisieNom+saisiePrenom,
             nom: saisieNom,
             prenom: saisiePrenom,
             cours:[],

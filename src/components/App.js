@@ -6,6 +6,9 @@ import '../styles/App.css';
 import Accueil from './Accueil/Accueil.js'
 import Professeurs from './Professeurs/Professeurs.js'
 import Cours from './Cours/Cours.js'
+import Math from './Cours/Math.js'
+import English from './Cours/English.js'
+import Physique from './Cours/Physique.js'
 import Navbar from './Navbar'
 /*
 <div className="App">
@@ -72,6 +75,15 @@ function App() {
       </Route>
       <Route path="/Cours" >
         <Cours />
+      </Route>
+      <Route path="/Math" >
+        <Math />
+      </Route>
+      <Route path="/English" >
+        <English />
+      </Route>
+      <Route path="/Physique" >
+        <Physique />
       </Route>
     </Switch>
   </Router>

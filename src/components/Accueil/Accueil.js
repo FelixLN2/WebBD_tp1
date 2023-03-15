@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import logo from '../../assets/logo.png';
 import Navbar from '../Navbar'
 import '../../styles/App.css';
-//import FormulaireDepense from './FormulaireDepense';
-//import './NouvelleDepense.css';
+
 
 function Accueil() {
 
