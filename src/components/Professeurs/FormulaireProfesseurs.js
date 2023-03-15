@@ -3,7 +3,7 @@ import '../../styles/FormulaireProfesseurs.css';
 import Card from "../Card";
 
 
-/*
+
 function FormulaireProfesseurs({adresseMethode}){
     const [saisiePrenom, setSaisiePrenom] = useState('')
     const [saisieNom, setSaisieNom] = useState('')
@@ -12,10 +12,13 @@ function FormulaireProfesseurs({adresseMethode}){
     function ajouterProfesseurHandler(event){
         event.preventDefault();
         const donneesProf = {
-            id:"4",
-            prenom: saisiePrenom,
+            id:4,
             nom: saisieNom,
-            date: new Date(saisieDate),
+            prenom: saisiePrenom,
+            cours:[],
+            photoUrl:"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+            dateEmbauche: saisieDate,
+ 
           };
             if(saisiePrenom===""){
                 alert("Veuillez entrer un prenom")
@@ -48,11 +51,11 @@ function FormulaireProfesseurs({adresseMethode}){
         setSaisieNom(event.target.value)
       }
 
-    function closeHandler() {
+    /*function closeHandler() {
         handleClose();
-    }
-   
-}*/
+    }*/
+ /*  
+}
 
 
 const FormulaireProfesseurs = (props) => {
@@ -87,7 +90,7 @@ const FormulaireProfesseurs = (props) => {
       setSaisieNom('');
       setSaisieDate('');
     };
-
+*/
 
 
   return (
@@ -123,12 +126,14 @@ const FormulaireProfesseurs = (props) => {
           </div>
         </div>
         <div className='nouveau_prof__actions'>
-          <button type="button" onClick={props.onCancel}>Annuler</button>
           <button type='submit'>Appliquer</button>
         </div>
         
       </form>
     </div>
+
+  //<button type="button" onClick={adresseMethode.onCancel}>Annuler</button>
+          
    /* <div classnom="teacher-list">
       {teachers.map((teacher) => (
         <div classnom="teacher-card" key={teacher.id}>

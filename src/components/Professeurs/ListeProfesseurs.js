@@ -18,7 +18,7 @@ function ListeProfesseurs({ Professeurs }) {
         />
         
       ))}
-      <button>fesf</button>
+      
     </ul>
   );
 }

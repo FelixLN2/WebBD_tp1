@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
-
+import Accueil from './components/Accueil/Accueil.js'
+import Professeurs from './components/Professeurs/Professeurs.js'
+import Cours from './components/Cours/Cours.js'
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
@@ -14,6 +16,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
+      
     </BrowserRouter>
   </React.StrictMode>
 );
