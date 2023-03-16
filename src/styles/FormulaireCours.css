@@ -1,9 +1,10 @@
 .nouveau_cours_control {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    align-items: center;
+  background-color: lightsteelblue;
     gap: 1rem;
     margin-bottom: 1rem;
-    text-align: left;
+
   }
   
   .nouveau_cours__control label {
@@ -22,5 +23,8 @@
   }
   
   .nouveau_cours__actions {
-    text-align: right;
+    background-color: lightsteelblue;
+    color:white;
+    border-radius:5px;
+    padding:5px;
   }

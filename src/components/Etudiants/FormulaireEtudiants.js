@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import '../../styles/FormulaireCours.css';
+import '../../styles/FormulaireEtudiants.css';
 
 
 function FormulaireEtudiants({ adresseMethode }) {
@@ -54,7 +54,7 @@ function FormulaireEtudiants({ adresseMethode }) {
 
 
   return (
-    <div>
+    <div className='nouvel_etudiant_control'>
 
       <form onSubmit={ajouterEtudiantHandler}>
         <div className='nouvel_etudiant__controls'>

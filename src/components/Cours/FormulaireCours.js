@@ -116,7 +116,7 @@ function FormulaireCours({ adresseMethode }) {
 
 
   return (
-    <div>
+    <div className='nouveau_cours_control'>
 
       <form onSubmit={ajouterCoursHandler}>
         <div className='nouveau_cours__controls'>
@@ -167,9 +167,9 @@ function FormulaireCours({ adresseMethode }) {
             />
           </div>
         </div>
-        <div className='nouveau_cours__actions'>
+        <div >
 
-          <button type='submit'>Appliquer</button>
+          <button className='nouveau_cours__actions' type='submit'>Appliquer</button>
         </div>
 
       </form>

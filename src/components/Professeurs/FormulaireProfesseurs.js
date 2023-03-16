@@ -47,7 +47,7 @@ function FormulaireProfesseurs({ adresseMethode }) {
 
 
   return (
-    <div>
+    <div className='nouveau_prof_control'>
 
       <form onSubmit={ajouterProfesseurHandler}>
         <div className='nouveau_prof__controls'>
@@ -69,8 +69,8 @@ function FormulaireProfesseurs({ adresseMethode }) {
           </div>
 
         </div>
-        <div className='nouveau_prof__actions'>
-          <button type='submit'>Appliquer</button>
+        <div>
+          <button  className='nouveau_prof_actions' type='submit'>Appliquer</button>
         </div>
 
       </form>

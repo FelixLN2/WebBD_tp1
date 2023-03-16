@@ -60,20 +60,24 @@ function Cours() {
 
 
     return (
-        <div className='nouveau-cours'>
+       
+            <div className='nouveau-cours'>
 
-            {!enEdition && (
-                <button onClick={debutEditionHandler}>Ajouter nouveau Cours</button>
-            )}
-            {enEdition && (
-                <FormulaireCours
+                {!enEdition && (
+                    <button className='nouveau_cours' onClick={debutEditionHandler}>Ajouter nouveau Cours</button>
+                )}
+                {enEdition && (
+                    <FormulaireCours
 
-                    adresseMethode={ajouterCours}
-                />
-            )}
-            <h2>Cours</h2>
-            <ListeCours Cours={cours} />
-        </div>
+                        adresseMethode={ajouterCours}
+                    />
+                )}
+                <h2>Cours</h2>
+                <div className='liste_cours'>
+                    <ListeCours Cours={cours} />
+                </div>
+            </div>
+        
     );
 };
 

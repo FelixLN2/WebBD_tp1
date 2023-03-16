@@ -9,7 +9,7 @@ function CoursIndividuel({ id, titre, discipline, maxEtudiants, dateDebut, dateF
 
 
   return (
-    <li key={id}>
+    <li className="cours" key={id}>
       {titre} <br />
       {discipline} <br />
       Étudiants max : {maxEtudiants}<br />

@@ -7,7 +7,7 @@ import Etudiants from '../Etudiants/Etudiants';
 
 function Math() {
 
-    const cours = useState([
+    const cours = 
         {
             id: '10114-snMath',
             titre: '10114-sn',
@@ -17,8 +17,7 @@ function Math() {
             dateFin: '11/03/2023',
             professeur: 'A',
             etudiants: 10
-        }
-    ]);
+        };
 
 
 

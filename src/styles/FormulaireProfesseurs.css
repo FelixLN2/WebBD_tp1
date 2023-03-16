@@ -1,18 +1,19 @@
 .nouveau_prof_control {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    text-align: left;
+    align-items: center;
+    display:block;
+    background-color: lightseagreen;
+
   }
   
-  .nouveau_prof__control label {
+  .nouveau_prof_control label {
     font-weight: bold;
     margin-bottom: 0.5rem;
     display: block;
+    
+
   }
   
-  .nouveau_prof__control input {
+  .nouveau_prof_control input {
     font: inherit;
     padding: 0.5rem;
     border-radius: 6px;
@@ -21,6 +22,11 @@
     max-width: 100%;
   }
   
-  .nouveau_prof__actions {
-    text-align: right;
+  .nouveau_prof_actions {
+
+    background-color: purple;
+    color:white;
+    border-radius: 5px;
+    padding: 5px;
+
   }
